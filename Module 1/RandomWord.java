@@ -6,13 +6,13 @@ public class RandomWord {
     public static void main(String[] args) {
         String champion = "";
         int i = 1;
-        String challenger = "";
+        String challenger = StdIn.readString();;
         while (!challenger.equals("exit") && !StdIn.isEmpty()) {
-            challenger = StdIn.readString();
             if (StdRandom.bernoulli(1.0 / i)) {
                 champion = challenger;
             }
             i++;
+            challenger = StdIn.readString();
         }
         StdOut.println(champion);
     }
