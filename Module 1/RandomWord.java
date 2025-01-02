@@ -6,7 +6,7 @@ public class RandomWord {
     public static void main(String[] args) {
         String champion = "";
         int i = 1;
-        String challenger = StdIn.readString();;
+        String challenger = StdIn.readString();
         while (!challenger.equals("exit") && !StdIn.isEmpty()) {
             if (StdRandom.bernoulli(1.0 / i)) {
                 champion = challenger;

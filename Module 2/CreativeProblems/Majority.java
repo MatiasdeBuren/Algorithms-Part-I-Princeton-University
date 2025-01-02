@@ -13,7 +13,7 @@ public class Majority {
         this.n = a.length;
     }
 
-    //Es lineal por ser un ciclo for y es boyer-moore
+    //Es lineal por ser un solo ciclo for y es boyer-moore
     public String findMajority(){
         int cont = 0;
         String champion = "";
