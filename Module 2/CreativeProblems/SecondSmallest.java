@@ -15,10 +15,7 @@ public class SecondSmallest {
 
     public int[] findSmallest() {
         int[] result = new int[2];
-        int[] tree = new int[2 * N - 1];
         
-        result[0] = min;
-        result[1] = secondMin;
         return result;
     }
 }
